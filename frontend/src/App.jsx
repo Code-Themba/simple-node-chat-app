@@ -35,8 +35,15 @@ const App = () => {
       <div className="chat-container">
         <div className="messages">
           {messages.map((msg, index) => (
-            <div key={index} className="message">
-              {msg}
+            <div
+              key={index}
+              className={`message ${
+                msg.id === socketRef.current.id
+                  ? "self-message"
+                  : "other-message"
+              }`}
+            >
+              {msg.txt}
             </div>
           ))}
         </div>

@@ -74,3 +74,12 @@ body {
 .form button:hover {
   background-color: #0056b3;
 }
+.self-message {
+  align-self: flex-end; /* Aligns the message to the right */
+  background-color: #dcf8c6; /* A different color for the sender's message */
+}
+
+.other-message {
+  align-self: flex-start; /* Aligns the message to the left (default) */
+  background-color: #e5e5ea; /* Default color for other users' messages */
+}
