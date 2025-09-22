@@ -4,8 +4,8 @@
   "description": "Backend for a real-time chat application using Node.js and Socket.io.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
   },
   "dependencies": {
     "express": "^4.19.2",
